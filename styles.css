@@ -1,0 +1,342 @@
+/* ------------------- GLOBAL STYLING --------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --gray: #969494;
+  --deep-red: #930403;
+  --red: #c50203;
+  --orange: #fa680b;
+  --yellow: #fcbf23;
+  --blue: #1f7bc4;
+  --dark-blue: #192061;
+  --navy: #031747;
+  --white: #ffffff;
+  --black: #000000;
+  --cream: #f4f2ee;
+}
+.green {
+  background-color: green;
+}
+.red {
+  background-color: red;
+}
+header {
+  grid-column: 1 / 11;
+  padding: 10px;
+  background-color: var(--blue);
+  -webkit-box-shadow: 3px 10px 5px -6px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 3px 10px 5px -6px rgba(0, 0, 0, 0.21);
+  box-shadow: 3px 10px 5px -6px rgba(0, 0, 0, 0.21);
+  height: 75px;
+}
+.personal-profile {
+  grid-column: 1 / 3;
+  background-color: var(--white);
+  overflow-x: auto;
+}
+main {
+  grid-column: 3 / 8;
+  background-color: var(--cream);
+}
+.messages {
+  grid-column: 8 / 11;
+  background-color: var(--white);
+}
+footer {
+  background-color: pink;
+}
+body {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  /* grid-template-rows: repeat(5, 1fr); */
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  height: 100vh;
+  min-height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+p {
+  font-size: 14px;
+  line-height: 1rem;
+}
+/* ------------------- HEADER STYLING --------------*/
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav img {
+  max-width: 300px;
+}
+nav .menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+nav .menu li {
+  margin: 5px 10px 5px 0;
+}
+nav .menu li i {
+  font-size: 20px;
+  color: var(--cream);
+}
+nav .menu li img {
+  width: 40px;
+  border-radius: 100px;
+  margin-left: 15px;
+}
+.banner {
+  width: 110%;
+  height: 20px;
+  background-color: var(--red);
+  margin-left: -10px;
+  margin-right: -10px;
+}
+/* ------------------- PERSONAL PROFILE STYLING --------------*/
+.personal-profile h3 {
+  font-size: 16px;
+  text-align: center;
+  color: var(--blue);
+}
+.personal-profile .profile-picture {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  background-image: url("./images/friends/9.png");
+  background-size: cover;
+  margin-bottom: 60px;
+}
+.personal-profile .profile-picture img {
+  width: 100px;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 20px;
+  outline: 6px solid var(--red);
+}
+.personal-profile .online-status {
+  background-color: green;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: -58px;
+  left: 65%;
+  transform: translate(-65%, 0);
+  border-radius: 100px;
+  outline: 6px solid var(--white);
+}
+.personal-profile .name {
+  padding: 5px 15px;
+  text-align: center;
+}
+.personal-profile .name h2 {
+  font-size: 15px;
+  color: var(--deep-red);
+}
+.personal-profile .name p {
+  font-size: 12px;
+}
+.personal-profile .intro {
+  padding: 15px;
+}
+.personal-profile .photos .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.personal-profile .photos .gallery img {
+  width: 28%;
+  margin: 10px 1% 0 1%;
+}
+.personal-profile .friends {
+  padding: 15px;
+}
+.personal-profile .friends .friend-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.personal-profile .friends .friend-list img {
+  width: 28%;
+  margin: 10px 1% 0 1%;
+}
+/* ------------------- MAIN FEED STYLING --------------*/
+main .feed {
+  overflow-x: auto;
+  margin: 30px;
+}
+main ul {
+  list-style: none;
+}
+main .feed .on-your-mind {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 20px;
+  -webkit-box-shadow: -2px 23px 23px -22px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: -2px 23px 23px -22px rgba(0, 0, 0, 0.14);
+  box-shadow: -2px 23px 23px -22px rgba(0, 0, 0, 0.14);
+  margin-bottom: 30px;
+}
+main .feed .on-your-mind .picture {
+  display: flex;
+  align-items: center;
+}
+main .feed .on-your-mind .picture img {
+  width: 50px;
+  border-radius: 100px;
+  margin-right: 20px;
+}
+main .feed .on-your-mind .picture span {
+  font-size: 14px;
+  color: var(--gray);
+}
+main .feed .on-your-mind button {
+  width: 80px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--red);
+  color: var(--white);
+  font-size: 14px;
+}
+main .feed .post {
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 20px;
+  -webkit-box-shadow: -2px 23px 23px -22px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: -2px 23px 23px -22px rgba(0, 0, 0, 0.14);
+  box-shadow: -2px 23px 23px -22px rgba(0, 0, 0, 0.14);
+  margin-bottom: 30px;
+}
+main .feed .post .top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+main .feed .post .top img {
+  width: 50px;
+  border-radius: 100px;
+  margin-right: 20px;
+}
+main .feed .post .top .person {
+  display: flex;
+  flex-direction: column;
+}
+main .feed .post .top .person .name {
+  font-size: 14px;
+  font-weight: 500;
+}
+main .feed .post .top .person .date {
+  font-size: 12px;
+  color: var(--gray);
+}
+main .feed .post .text {
+  margin-bottom: 20px;
+}
+main .feed .post .bottom {
+  display: flex;
+  justify-content: space-between;
+  color: var(--navy);
+}
+main .feed .post .bottom .reactions {
+  display: flex;
+}
+main .feed .post .bottom .reactions li {
+  margin-right: 10px;
+}
+main .feed .post .bottom .share-buttons {
+  display: flex;
+}
+main .feed .post .bottom .share-buttons li {
+  margin-right: 10px;
+}
+/* ------------------- MESSAGES STYLING --------------*/
+.messages .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: var(--yellow);
+}
+.messages .top i {
+  margin-right: 5px;
+}
+.messages .top h2 {
+  font-size: 18px;
+}
+.messages .inbox {
+  padding: 10px 30px;
+}
+.messages .inbox .message {
+  display: flex;
+  justify-content: space-between;
+}
+.messages .inbox .message .container {
+  display: flex;
+}
+.messages .inbox .message .image-container {
+  height: 80px;
+  position: relative;
+  margin-right: 20px;
+}
+.messages .inbox .message .image-container .image img {
+  width: 60px;
+  left: 0;
+  border-radius: 10px;
+}
+.messages .inbox .message .image-container .online-status {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 50px;
+  right: -5px;
+  border-radius: 100px;
+  outline: 5px solid var(--white);
+}
+.messages .inbox .message .text-container .name {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.messages .inbox .message .text-container .message-preview {
+  color: var(--gray);
+}
+.messages .inbox .message .time-ago {
+  color: var(--gray);
+  font-size: 12px;
+}
+
+/* --------  MOBILE STYLING  --------- */
+@media only screen and (max-width: 900px) {
+  body {
+    display: block;
+  }
+  .personal-profile {
+    display: none;
+  }
+  .messages {
+    display: none;
+  }
+  main {
+    width: 100%;
+  }
+  main .feed {
+    padding-top: 40px;
+  }
+}
