@@ -1,5 +1,15 @@
 # FARM ANIMAL HEROES ANONYMOUS
 
+A social media UI example build for Farm Animal Superheroes
+
+This project uses only HTML & CSS
+
+## Libraries used:
+
+Font Awesome
+
+Google Fonts
+
 ## Colour pallette
 
 Deep red --> #930403 <br/>
@@ -12,5 +22,3 @@ Navy --> #031747 <br/>
 White --> #ffffff <br/>
 Black --> #000000 <br/>
 Cream --> #f4f2ee
-
-![alt text](./images/resources/colour%20pallete.jpeg)
