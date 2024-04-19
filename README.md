@@ -1,7 +1,7 @@
 # FARM ANIMAL HEROES ANONYMOUS
 
 A social media UI example build for Farm Animal Superheroes
-
+UI was inspired from a random google images example of a UI
 This project uses only HTML & CSS
 
 ## Libraries used:
@@ -9,6 +9,15 @@ This project uses only HTML & CSS
 Font Awesome
 
 Google Fonts
+
+## Useful tools to build this
+
+CSS Box Shadow Generator: https://www.cssmatic.com/box-shadow
+
+CSS grid builder: https://cssgrid-generator.netlify.app/
+<-- (I only ended up using Grid Columns - No Grid Rows used)
+
+HTML Semantics cheat sheet: https://learntheweb.courses/topics/html-semantics-cheat-sheet/
 
 ## Colour pallette
 
